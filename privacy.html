@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق التشاليح | Tashaleeh App - Privacy Policy</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* =========================================
+           ألوان التطبيق (حسب كود Flutter)
+           ========================================= */
+        :root {
+            --primary-color: #FFC502;
+            --secondary-color: #0E3B65;
+            --accent-color: #FF7800;
+            --bg-color: #F7F7F7;
+            --white: #ffffff;
+            --text-dark: #000000;
+            --text-grey: #747474;
+            --border-color: #E5E5E5;
+            --error-color: #F12415;
+            --success-color: #34C039;
+        }
+
+        /* =========================================
+           التنسيقات الأساسية
+           ========================================= */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            transition: all 0.3s ease;
+        }
+
+        html[dir="ltr"] body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* =========================================
+           الشريط العلوي (Header)
+           ========================================= */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid var(--primary-color);
+        }
+
+        .lang-btn {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border: none;
+            padding: 8px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: inherit;
+            transition: 0.3s;
+        }
+
+        .lang-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        /* =========================================
+           القسم القانوني (Privacy Policy & Legal)
+           ========================================= */
+        .legal-section {
+            background-color: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            margin: 40px auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .legal-header h1 {
+            color: var(--secondary-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .legal-header p {
+            color: var(--text-grey);
+            font-weight: 600;
+        }
+
+        .legal-content h2 {
+            color: var(--secondary-color);
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .legal-content h3 {
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .legal-content p,
+        .legal-content ul {
+            color: var(--text-grey);
+            margin-bottom: 15px;
+        }
+
+        .legal-content ul {
+            padding-inline-start: 25px;
+        }
+
+        .legal-content li {
+            margin-bottom: 8px;
+        }
+
+        /* قسم حذف البيانات (مهم لجوجل) */
+        .data-deletion-box {
+            background-color: #FFF1CC;
+            /* primary100 */
+            border: 2px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .data-deletion-box h3 {
+            color: var(--error-color);
+            margin-top: 0;
+        }
+
+        .contact-info {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* =========================================
+           نظام اللغات
+           ========================================= */
+        .en-content {
+            display: none;
+        }
+
+        html[dir="ltr"] .en-content {
+            display: block;
+        }
+
+        html[dir="ltr"] .ar-content {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .legal-section {
+                padding: 30px 20px;
+                margin: 20px auto;
+            }
+
+            .legal-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="App Icon">
+                <span class="ar-content">تطبيق التشاليح</span>
+                <span class="en-content">Tashaleeh App</span>
+            </a>
+            <button class="lang-btn" onclick="toggleLanguage()" id="langBtn">English</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="legal-section">
+
+            <div class="ar-content legal-content">
+                <div class="legal-header">
+                    <h1>سياسة الخصوصية وشروط الاستخدام</h1>
+                    <p>تاريخ آخر تحديث: 12 مارس 2026</p>
+                </div>
+
+                <h2>1. مقدمة</h2>
+                <p>نحن في "تطبيق التشاليح" نلتزم التزاماً كاملاً بحماية خصوصية مستخدمينا. تشرح هذه السياسة كيفية جمعنا
+                    للمعلومات، استخدامها، ومشاركتها عند استخدامك لتطبيقنا. استخدامك للتطبيق يعني موافقتك على هذه
+                    السياسة.</p>
+
+                <h2>2. البيانات التي نقوم بجمعها (Data Collection)</h2>
+                <p>لتقديم أفضل خدمة للبحث عن قطع الغيار، قد نطلب الوصول إلى البيانات التالية:</p>
+                <ul>
+                    <li><strong>المعلومات الشخصية:</strong> الاسم، رقم الجوال، والبريد الإلكتروني لإنشاء الحساب.</li>
+                    <li><strong>بيانات المركبة:</strong> نوع السيارة، الموديل، ورقم الهيكل (VIN) لتحديد القطع المتوافقة.
+                    </li>
+                    <li><strong>الصور والكاميرا:</strong> نحتاج إذن الكاميرا ومعرض الصور لتمكينك من رفع صور لقطع الغيار
+                        أو سيارتك المصدومة لطلب تسعيرها.</li>
+                    <li><strong>الموقع الجغرافي (Location):</strong> نطلب إذن الموقع لعرض التشاليح ومحلات القطع الأقرب
+                        إليك، وحساب تكلفة التوصيل.</li>
+                    <li><strong>بيانات الجهاز:</strong> مثل نوع الهاتف ونظام التشغيل لتحسين أداء التطبيق وحل المشاكل
+                        التقنية.</li>
+                </ul>
+
+                <h2>3. كيف نستخدم بياناتك؟</h2>
+                <ul>
+                    <li>ربط طلباتك (البحث عن قطعة) مع أصحاب التشاليح والمتاجر المعتمدة.</li>
+                    <li>التواصل معك عبر الإشعارات أو رسائل SMS لتحديث حالة طلبك.</li>
+                    <li>تخصيص تجربتك وعرض الإعلانات أو العروض المناسبة لنوع سيارتك.</li>
+                </ul>
+
+                <h2>4. خدمات الطرف الثالث (Third-Party Services)</h2>
+                <p>يستخدم التطبيق خدمات تابعة لجهات خارجية قد تجمع معلومات تستخدم لتحديد هويتك. هذه الخدمات تشمل:</p>
+                <ul>
+                    <li>خدمات جوجل بلاي (Google Play Services).</li>
+                    <li>خرائط جوجل (Google Maps) لتحديد المواقع.</li>
+                    <li>أدوات تحليل البيانات مثل (Google Analytics for Firebase).</li>
+                </ul>
+
+                <div class="data-deletion-box">
+                    <h3>5. طلب حذف الحساب والبيانات (Data Deletion)</h3>
+                    <p>وفقاً لسياسات Google Play، يحق لك طلب حذف حسابك وكافة بياناتك المرتبطة به في أي وقت. يمكنك القيام
+                        بذلك عبر طريقتين:</p>
+                    <ul>
+                        <li><strong>من داخل التطبيق:</strong> اذهب إلى (الإعدادات > الحساب > حذف الحساب نهائياً).</li>
+                        <li><strong>عبر البريد الإلكتروني:</strong> أرسل طلباً بعنوان "طلب حذف حساب" متضمناً رقم جوالك
+                            المسجل إلى البريد الإلكتروني الخاص بالدعم الفني، وسيتم مسح بياناتك (الاسم، الموقع، الطلبات،
+                            صور السيارات) خلال 7 أيام عمل.</li>
+                    </ul>
+                </div>
+
+                <h2>6. حماية الأطفال (Children's Privacy)</h2>
+                <p>هذا التطبيق غير موجه للأطفال تحت سن 13 عاماً. نحن لا نجمع بيانات شخصية عن قصد من الأطفال. إذا اكتشفنا
+                    أن طفلاً قد زودنا بمعلومات شخصية، نقوم بحذفها من خوادمنا فوراً.</p>
+
+                <h2>7. أمان البيانات</h2>
+                <p>نحن نتخذ إجراءات أمنية صارمة وتشفير متقدم لحماية بياناتك من الوصول غير المصرح به، التعديل، أو
+                    الإفصاح.</p>
+
+                <div class="contact-info">
+                    <h3>8. تواصل معنا</h3>
+                    <p>لأي استفسارات قانونية أو تقنية تتعلق بالخصوصية، يرجى مراسلتنا على:</p>
+                    <p>البريد الإلكتروني: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+                </div>
+            </div>
+
+            <div class="en-content legal-content">
+                <div class="legal-header">
+                    <h1>Privacy Policy & Terms of Use</h1>
+                    <p>Last Updated: March 12, 2026</p>
+                </div>
+
+                <h2>1. Introduction</h2>
+                <p>At "Tashaleeh App", we are fully committed to protecting our users' privacy. This policy explains how
+                    we collect, use, and share information when you use our app. By using the app, you agree to this
+                    policy.</p>
+
+                <h2>2. Data We Collect (Data Collection)</h2>
+                <p>To provide the best service for finding auto parts, we may request access to the following data:</p>
+                <ul>
+                    <li><strong>Personal Information:</strong> Name, phone number, and email to create an account.</li>
+                    <li><strong>Vehicle Data:</strong> Car make, model, and VIN to identify compatible parts.</li>
+                    <li><strong>Camera & Photos:</strong> We need camera/gallery access to allow you to upload pictures
+                        of parts or your damaged car for pricing.</li>
+                    <li><strong>Location Data:</strong> We request location access to show you the nearest salvage yards
+                        and calculate delivery costs.</li>
+                    <li><strong>Device Data:</strong> Such as phone model and OS to improve app performance and
+                        troubleshoot issues.</li>
+                </ul>
+
+                <h2>3. How We Use Your Data?</h2>
+                <ul>
+                    <li>To connect your parts requests with certified salvage yards and shops.</li>
+                    <li>To communicate with you via notifications or SMS to update your order status.</li>
+                    <li>To personalize your experience and show relevant offers based on your car type.</li>
+                </ul>
+
+                <h2>4. Third-Party Services</h2>
+                <p>The app uses third-party services that may collect information used to identify you. These services
+                    include:</p>
+                <ul>
+                    <li>Google Play Services.</li>
+                    <li>Google Maps (for location functionality).</li>
+                    <li>Data analytics tools (like Google Analytics for Firebase).</li>
+                </ul>
+
+                <div class="data-deletion-box">
+                    <h3>5. Account and Data Deletion</h3>
+                    <p>In accordance with Google Play policies, you have the right to request the deletion of your
+                        account and all associated data at any time. You can do this in two ways:</p>
+                    <ul>
+                        <li><strong>In-App:</strong> Go to (Settings > Account > Delete Account Permanently).</li>
+                        <li><strong>Via Email:</strong> Send an email titled "Account Deletion Request" including your
+                            registered phone number to our support email. Your data (name, location, orders, car photos)
+                            will be wiped within 7 business days.</li>
+                    </ul>
+                </div>
+
+                <h2>6. Children's Privacy</h2>
+                <p>This app is not intended for children under 13. We do not knowingly collect personal identifiable
+                    information from children. If we discover that a child has provided us with personal information, we
+                    immediately delete this from our servers.</p>
+
+                <h2>7. Data Security</h2>
+                <p>We implement strict security measures and advanced encryption to protect your data against
+                    unauthorized access, alteration, or disclosure.</p>
+
+                <div class="contact-info">
+                    <h3>8. Contact Us</h3>
+                    <p>For any legal or technical inquiries regarding privacy, please contact us at:</p>
+                    <p>Email: <a href="mailto:info@minjabl.com">info@minjabl.com</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const htmlTag = document.documentElement;
+            const langBtn = document.getElementById('langBtn');
+
+            if (htmlTag.getAttribute('dir') === 'rtl') {
+                // التبديل للإنجليزية
+                htmlTag.setAttribute('dir', 'ltr');
+                htmlTag.setAttribute('lang', 'en');
+                langBtn.innerText = 'العربية';
+            } else {
+                // التبديل للعربية
+                htmlTag.setAttribute('dir', 'rtl');
+                htmlTag.setAttribute('lang', 'ar');
+                langBtn.innerText = 'English';
+            }
+        }
+    </script>
+</body>
+
+</html>
