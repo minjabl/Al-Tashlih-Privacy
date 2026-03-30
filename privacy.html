@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق التشاليح | سياسة الخصوصية</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #FFC502;
+            --secondary-color: #0E3B65;
+            --bg-color: #F7F7F7;
+            --white: #ffffff;
+            --text-dark: #000000;
+            --text-grey: #747474;
+            --border-color: #E5E5E5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+        }
+
+        html[dir="ltr"] body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid var(--primary-color);
+        }
+
+        .lang-btn {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border: none;
+            padding: 8px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: inherit;
+        }
+
+        .legal-section {
+            background-color: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            margin: 40px auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .legal-header h1 {
+            color: var(--secondary-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .legal-header p {
+            color: var(--text-grey);
+            font-weight: 600;
+        }
+
+        .legal-content h2 {
+            color: var(--secondary-color);
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .legal-content p,
+        .legal-content ul {
+            color: var(--text-grey);
+            margin-bottom: 15px;
+        }
+
+        .legal-content ul {
+            padding-inline-start: 25px;
+        }
+
+        .legal-content li {
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .en-content {
+            display: none;
+        }
+
+        html[dir="ltr"] .en-content {
+            display: block;
+        }
+
+        html[dir="ltr"] .ar-content {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .legal-section {
+                padding: 30px 20px;
+            }
+
+            .legal-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="App Icon">
+                <span class="ar-content">تطبيق التشاليح</span>
+                <span class="en-content">Tashaleeh App</span>
+            </a>
+            <button class="lang-btn" onclick="toggleLanguage()" id="langBtn">English</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="legal-section">
+
+            <div class="ar-content legal-content">
+                <div class="legal-header">
+                    <h1>سياسة الخصوصية</h1>
+                    <p>تاريخ آخر تحديث: 12 مارس 2026</p>
+                </div>
+
+                <h2>1. مقدمة والفئة العمرية</h2>
+                <p>نحن في "تطبيق التشاليح" نلتزم بحماية خصوصيتك. هذا التطبيق موجه حصراً للمستخدمين الذين تبلغ أعمارهم
+                    <strong>18 عاماً فأكثر</strong>. استخدامك للتطبيق يعني موافقتك على هذه السياسة.
+                </p>
+
+                <h2>2. البيانات التي نقوم بجمعها</h2>
+                <p>لتقديم خدمة البحث عن قطع الغيار، نقوم بجمع المعلومات التالية:</p>
+                <ul>
+                    <li><strong>المعلومات الشخصية:</strong> الاسم، رقم الجوال، والبريد الإلكتروني.</li>
+                    <li><strong>الموقع الجغرافي:</strong> لتحديد التشاليح الأقرب إليك.</li>
+                    <li><strong>الصور والكاميرا:</strong> لتمكينك من رفع صور لقطع الغيار المطلوبة.</li>
+                    <li><strong>بيانات الجهاز:</strong> لتحسين الأداء الفني للتطبيق.</li>
+                </ul>
+
+                <h2>3. محتوى المستخدم وأدوات السلامة (UGC)</h2>
+                <p>بما أن التطبيق يسمح بتبادل الصور والرسائل بين المستخدمين وأصحاب التشاليح، فإننا نوفر الأدوات التالية
+                    لضمان سلامة المحتوى:</p>
+                <ul>
+                    <li><strong>الحظر:</strong> يمكن للمستخدم حظر أي مستخدم آخر يسيء استخدام المنصة.</li>
+                    <li><strong>الإبلاغ:</strong> ميزة الإبلاغ عن المحتوى المخالف متاحة للمراجعة الفورية من قبل الإدارة.
+                    </li>
+                </ul>
+
+                <h2>4. مشاركة وحذف البيانات</h2>
+                <p>نحن لا نبيع بياناتك. يتم مشاركة بيانات الطلب فقط مع مقدمي الخدمة المعنيين. يمكن للمستخدمين طلب حذف
+                    حساباتهم وبياناتهم في أي وقت من خلال إعدادات الحساب داخل التطبيق، أو عبر مراسلتنا على البريد
+                    الإلكتروني الموضح أدناه.</p>
+
+                <h2>5. خدمات الطرف الثالث</h2>
+                <p>يستخدم التطبيق خدمات مثل (Google Play Services) و (Google Maps) و (Firebase) لتحليل الأداء وتقديم
+                    الخرائط.</p>
+
+                <div class="contact-info">
+                    <h3>التواصل والدعم الفني</h3>
+                    <p>للأسئلة أو طلبات حذف البيانات، يرجى مراسلتنا على:</p>
+                    <p>البريد الإلكتروني: <a href="mailto:info@minjabl.com">info@minjabl.com</a></p>
+                </div>
+            </div>
+
+            <div class="en-content legal-content">
+                <div class="legal-header">
+                    <h1>Privacy Policy</h1>
+                    <p>Last Updated: March 12, 2026</p>
+                </div>
+
+                <h2>1. Introduction & Age Policy</h2>
+                <p>At "Tashaleeh App", we value your privacy. This app is intended for users aged <strong>18 and
+                        older</strong>. By using this app, you agree to the terms outlined in this policy.</p>
+
+                <h2>2. Data Collection</h2>
+                <p>To provide auto parts search services, we collect the following:</p>
+                <ul>
+                    <li><strong>Personal Info:</strong> Name, phone number, and email address.</li>
+                    <li><strong>Location Data:</strong> To show you the nearest salvage yards.</li>
+                    <li><strong>Camera & Photos:</strong> To allow uploading parts pictures.</li>
+                    <li><strong>Device Data:</strong> To improve app technical performance.</li>
+                </ul>
+
+                <h2>3. User Generated Content (UGC) Safety</h2>
+                <p>As the app allows communication and photo sharing, we provide the following safety features:</p>
+                <ul>
+                    <li><strong>Block:</strong> Users can block any offensive profiles immediately.</li>
+                    <li><strong>Report:</strong> A reporting system is available for inappropriate content for immediate
+                        review.</li>
+                </ul>
+
+                <h2>4. Data Sharing & Deletion</h2>
+                <p>We do not sell your data. Users can request to delete their accounts and data at any time via in-app
+                    settings or by contacting us at the support email below.</p>
+
+                <h2>5. Third-Party Services</h2>
+                <p>The app utilizes Google Play Services, Google Maps, and Firebase for analytics and mapping
+                    functionality.</p>
+
+                <div class="contact-info">
+                    <h3>Contact & Support</h3>
+                    <p>For inquiries or data deletion requests, contact us at:</p>
+                    <p>Email: <a href="mailto:info@minjabl.com">info@minjabl.com</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const htmlTag = document.documentElement;
+            const langBtn = document.getElementById('langBtn');
+            if (htmlTag.getAttribute('dir') === 'rtl') {
+                htmlTag.setAttribute('dir', 'ltr');
+                htmlTag.setAttribute('lang', 'en');
+                langBtn.innerText = 'العربية';
+            } else {
+                htmlTag.setAttribute('dir', 'rtl');
+                htmlTag.setAttribute('lang', 'ar');
+                langBtn.innerText = 'English';
+            }
+        }
+    </script>
+</body>
+
+</html>
